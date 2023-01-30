@@ -15,9 +15,8 @@ rsconnect::connectApiUser(
 )
 
 rsconnect::deployApp(
-  appDir = ".",
-  appName = "test.stringi.deploy",
-  appPrimaryDoc = "app.R", # the primary file for shinyapp # Uncomment here
+  appFiles = "app.R",
+  appName = "test-stringi-deploy",
   account = Sys.getenv("CONNECT_USER"),
   server = "connect",
   forceUpdate = FALSE
